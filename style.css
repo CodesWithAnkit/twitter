@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
-  outline: none;
+  outline: grid;
 }
 
 html {
@@ -21,7 +21,7 @@ body {
 .main-page {
   width: 100%;
   height: 100vh;
-  display: grid;
+  display: none;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr min-content;
 }
@@ -189,3 +189,32 @@ body {
 
 /* End of footer */
 /* End of Main page */
+
+/* Login Page */
+.login-page {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(5rem, 1fr) 2fr minmax(5rem, 1fr);
+  grid-template-rows: repeat(2, min-content) 1fr;
+  grid-row-gap: 1.5rem;
+}
+
+/* Login Page Nav */
+.login-page-nav {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  background-color: #fff;
+  padding: 2.5rem 0;
+}
+/* Finish of login page nav */
+
+/* Loggin */
+.login {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #fff;
+  width: 100rem;
+}
+/* End of Login */
+/* End of Login Page */
