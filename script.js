@@ -1,11 +1,20 @@
-const http = require('http');
+// Dom ELEMENT
 
-const server = http.createServer((req, res) => {
-  const { headers, url, method } = req;
-  console.log(headers, url, method);
-  res.end();
+const mainPage = document.querySelector('.main-page');
+const loginPage = document.querySelector('.login-page');
+const middleContent = document.querySelector('.middle-content');
+
+/*=================================================*/
+
+// Main page
+
+const goToLoginPage = () => {
+  mainPage.style.display = 'none';
+  loginPage.style.display = 'grid';
+};
+
+middleContent.addEventListener('click', e => {
+  if (e.target.classList[1] === 'main-btn') {
+    goToLoginPage();
+  }
 });
-
-const PORT = 5000;
-
-server.listen(PORT, () => console.log(`Server running on ${PORT}`));
