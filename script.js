@@ -15,6 +15,7 @@ const postModalX = document.querySelector('.modal-header i');
 const modalPostBtn = document.querySelector('.modal-header button');
 const modalFooterPlus = document.querySelector('.modal-footer span');
 const modalInput = document.querySelector('.modal-input');
+const modalFooter = document.querySelector('.modal-footer');
 
 /*=================================================*/
 
